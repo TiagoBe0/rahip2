@@ -126,5 +126,21 @@
       button.textContent = body.classList.contains('dark-theme') ? '☀️' : '🌙';
     }
   </script>
+  <script>
+    const form = document.querySelector('.calificanos-form form');
+    const msg  = document.getElementById('success-message');
+  
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();               // evitamos recarga inmediata
+      msg.style.display = 'block';      // mostramos el mensaje
+      form.querySelector('button').disabled = true; // opcional: deshabilita botón
+  
+      // tras la animación, envías el formulario de verdad:
+      setTimeout(() => {
+        form.submit();
+      }, 2000); // 2 s para que se vea la animación
+    });
+  </script>
+  
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>rahip – Contacto</title>
-  <link rel="stylesheet" href="servicios.css" />
+  <link rel="stylesheet" href="contacto.css" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,11 +97,6 @@
               ></textarea>
             </div>
 
-            <!-- reCAPTCHA -->
-            <div class="d-flex justify-content-center mb-4">
-              <div class="g-recaptcha" data-sitekey="TU_SITE_KEY"></div>
-            </div>
-
             <!-- Botón Enviar -->
             <div class="text-center">
               <button type="submit" class="btn btn-outline-light rounded-pill px-5 py-2">
@@ -109,6 +104,23 @@
               </button>
             </div>
           </form>
+
+          <!-- Mensaje de confirmación oculto por defecto -->
+          <div
+            id="success-message"
+            class="alert alert-success success-animation"
+            role="alert"
+            style="
+              display: none;
+              position: fixed;
+              top: 20%;
+              left: 50%;
+              transform: translateX(-50%);
+              z-index: 1000;
+            "
+          >
+            ¡Formulario enviado correctamente!
+          </div>
         </div>
       </section>
     </main>
@@ -135,11 +147,28 @@
     crossorigin="anonymous"
   ></script>
   <script>
+    // Cambio de tema
     function toggleTheme() {
       const body = document.body;
-      body.classList.toggle('dark-theme');
-      document.getElementById('theme-toggle').textContent = body.classList.contains('dark-theme') ? '☀️' : '🌙';
+      const btn  = document.getElementById("theme-toggle");
+      body.classList.toggle("dark-theme");
+      btn.textContent = body.classList.contains("dark-theme") ? "☀️" : "🌙";
     }
+
+    // Animación + redirección en el formulario de contacto
+    const contactForm = document.querySelector(".contact-form form");
+    const successMsg  = document.getElementById("success-message");
+
+    contactForm.addEventListener("submit", function(e) {
+      e.preventDefault();                // Evita recarga inmediata
+      successMsg.style.display = "block"; // Muestra el mensaje
+      contactForm.querySelector("button").disabled = true; // Deshabilita botón
+
+      // Tras 2 s, redirige al inicio
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 2000);
+    });
   </script>
 </body>
 </html>

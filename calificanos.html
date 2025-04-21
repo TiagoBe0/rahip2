@@ -84,10 +84,7 @@
                         placeholder="Si la empresa fuera tuya, ¿qué cambiarías para mejorar aún más nuestros servicios?"></textarea>
             </div>
 
-            <!-- reCAPTCHA -->
-            <div class="d-flex justify-content-center mb-4">
-              <div class="g-recaptcha" data-sitekey="TU_SITE_KEY"></div>
-            </div>
+         
 
             <!-- Botón Enviar -->
             <div class="text-center">
@@ -97,6 +94,11 @@
               </button>
             </div>
           </form>
+          <!-- Mensaje de confirmación oculto por defecto -->
+<div id="success-message" class="alert alert-success success-animation" role="alert" style="display:none; position: fixed; top: 20%; left: 50%; transform: translateX(-50%); z-index:1000;">
+  ¡Formulario enviado correctamente!
+</div>
+
         </div>
       </section>
     </main>
@@ -129,5 +131,21 @@
         b.classList.contains('dark-theme') ? '☀️' : '🌙';
     }
   </script>
+<script>
+  const form = document.querySelector('.calificanos-form form');
+  const msg  = document.getElementById('success-message');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();               // evitamos recarga inmediata
+    msg.style.display = 'block';      // mostramos el mensaje
+    form.querySelector('button').disabled = true; // opcional: deshabilita botón
+
+    // tras 2 s de animación, redirigimos al inicio
+    setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 2000);
+  });
+</script>
+  
 </body>
 </html>

@@ -38,6 +38,20 @@
 .star-rating label:hover ~ label {
   color: #fff;
 }
+/* Animación de aparición desde arriba con fade-in/fade-out */
+@keyframes slideFade {
+  0%   { opacity: 0; transform: translateY(-50px); }
+  10%  { opacity: 1; transform: translateY(0); }
+  90%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-50px); }
+}
+
+.success-animation {
+  animation: slideFade 2s ease-in-out forwards;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
 
 /* Placeholder cursiva */
 .calificanos-form .form-control::placeholder {
