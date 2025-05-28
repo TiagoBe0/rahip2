@@ -102,8 +102,8 @@ body {
   --bg-color: #4a1580;
   --text-color: black;
   --link-color: black;
-  --nav-bg: #1a1725;
-  --footer-bg: rgba(30, 27, 33, 0.89);
+  --nav-bg: #260e3a;
+  --footer-bg: rgba(80, 27, 133, 0.89);
 }
 
 body.dark-theme {
@@ -364,16 +364,7 @@ body {
     padding: 0;
 }
   
-:root {
-    --bg-color: #4a1580;
-    --text-color: #e0e0e0; /* Texto claro por defecto para buena legibilidad sobre fondo oscuro */
-    --link-color: #bb86fc; /* Un color de enlace que funcione bien en ambos temas o se ajuste */
-    --nav-bg: #1a1725; /* No usado activamente por el nuevo nav, pero guardado */
-    --footer-bg: rgba(30, 27, 33, 0.89);
-    /* Variables para las estrellas de calificación */
-    --star-empty-color: rgba(255,255,255,0.5); /* Estrellas vacías más visibles */
-    --star-filled-color: gold;
-}
+
   
 body.dark-theme {
     --bg-color: #111;
@@ -593,7 +584,7 @@ body.dark-theme #theme-toggle { --boton-fondo: #222222cc; --boton-icono: #5a0280
 
 /* Footer */
 .footer {
-  background-color: rgba(50, 7, 90, 0.983);
+  background-color: rgba(75, 9, 138, 0.983);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1052,8 +1043,8 @@ body {
     --bg-color: #4a1580;
     --text-color: #e0e0e0; /* Texto claro por defecto para buena legibilidad sobre fondo oscuro */
     --link-color: #bb86fc; /* Un color de enlace que funcione bien en ambos temas o se ajuste */
-    --nav-bg: #1a1725; /* No usado activamente por el nuevo nav, pero guardado */
-    --footer-bg: rgba(30, 27, 33, 0.89);
+    --nav-bg: #300747; /* No usado activamente por el nuevo nav, pero guardado */
+    --footer-bg: rgba(45, 10, 80, 0.89);
     /* Variables para las estrellas de calificación */
     --star-empty-color: rgba(255,255,255,0.5); /* Estrellas vacías más visibles */
     --star-filled-color: gold;

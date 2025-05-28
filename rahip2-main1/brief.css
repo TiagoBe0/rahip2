@@ -520,7 +520,7 @@ body.dark-theme .nav-toggle .hamburger-icon::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .footer-left p {
@@ -536,11 +536,11 @@ body.dark-theme .nav-toggle .hamburger-icon::after {
 
 .social-icon {
   display: inline-block;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .social-icon img {
-  width: 44px;
+  width: 21px;
   height: auto;
 }
 
