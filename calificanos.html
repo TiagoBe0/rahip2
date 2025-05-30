@@ -138,6 +138,22 @@
         navToggle.setAttribute('aria-expanded', isExpanded);
       });
     }
+
+
+
+  const form = document.querySelector('.calificanos-form form');
+  const msg  = document.getElementById('success-message');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();               // evitamos recarga inmediata
+    msg.style.display = 'block';      // mostramos el mensaje
+    form.querySelector('button').disabled = true; // opcional: deshabilita botón
+
+    // tras 2 s de animación, redirigimos al inicio
+    setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 2000);
+  });
   </script>
   
 </body>

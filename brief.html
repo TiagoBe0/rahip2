@@ -158,6 +158,25 @@
         navToggle.setAttribute('aria-expanded', isExpanded);
       });
     }
+
+       // Script for the brief-form
+    const briefForm = document.querySelector(".brief-form form");
+    const successMsg = document.getElementById("success-message");
+
+    if (briefForm && successMsg) { // Check if elements exist before adding listener
+        briefForm.addEventListener("submit", function (e) {
+          e.preventDefault();                      // Evita recarga
+          successMsg.style.display = "block";      // Muestra animación
+          // Disable button after submit attempt
+          const submitButton = briefForm.querySelector("button[type='submit']");
+          if(submitButton) submitButton.disabled = true;
+
+
+          setTimeout(() => {
+            window.location.href = "index.html";   // Redirige tras 2 s
+          }, 2000);
+        });
+    }
   </script>
   
 </body>
