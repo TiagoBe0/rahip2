@@ -71,7 +71,7 @@ body {
     --text-color: black; 
     --link-color: black; 
     --nav-bg: #1a1725;
-    --footer-bg: rgba(30, 27, 33, 0.89);
+    --footer-bg: rgba(77, 15, 139, 0.89);
 }
   
 body.dark-theme {
@@ -586,7 +586,7 @@ body.dark-theme #theme-toggle {
     --text-color: black;
     --link-color: black;
     --nav-bg: #1a1725;
-    --footer-bg: rgba(30, 27, 33, 0.89);
+    --footer-bg: rgba(44, 13, 75, 0.89);
   }
   
   body.dark-theme {
