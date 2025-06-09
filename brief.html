@@ -45,11 +45,20 @@
       <section class="brief-form">
         <div class="container py-5">
           <h2 class="text-center text-white mb-4">Datos Personales</h2>
- <form action="TU_ENDPOINT" method="post">
+ <form action="/brief/registro" method="post">
+    <div class="mb-3">
+    <input
+      type="text"
+      name="mail"
+      class="form-control form-control-lg bg-white bg-opacity-25 border-0 rounded-pill text-white"
+      placeholder="correo electrónico"
+      required
+    />
+  </div>
   <div class="mb-3">
     <input
       type="text"
-      name="empresa"
+      name="nombreEmpresa"
       class="form-control form-control-lg bg-white bg-opacity-25 border-0 rounded-pill text-white"
       placeholder="Nombre de la empresa"
       required
@@ -67,7 +76,7 @@
   <div class="mb-3">
     <input
       type="tel"
-      name="telefono"
+      name="celular"
       class="form-control form-control-lg bg-white bg-opacity-25 border-0 rounded-pill text-white"
       placeholder="Número de celular"
       required
@@ -88,7 +97,7 @@
     <div class="mb-3">
     <input
       type="text"
-      name="DNI"
+      name="cuit"
       class="form-control form-control-lg bg-white bg-opacity-25 border-0 rounded-pill text-white"
       placeholder="DNI/CUIT (necesario para la presentación del presupuesto)"
       required

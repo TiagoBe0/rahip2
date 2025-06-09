@@ -51,35 +51,69 @@
             Recordá que con tu aporte por calificarnos, ayudás a cada vez ser mejores en esto que nos apasiona
           </p>
 
-          <form action="TU_ENDPOINT" method="post">
+          <form action="calificacion/registro" method="post">
             <!-- Nombre de la empresa -->
             <div class="mb-4">
-              <input type="text" name="empresa"
+              <input type="text" name="nombreEmpresa"
                      class="form-control form-control-lg bg-white bg-opacity-25 border-0 rounded-pill text-white"
                      placeholder="Nombre de la empresa" required>
             </div>
 
             <!-- Pregunta + Rating -->
             <p  class="intro text-center text-white mb-4">
-              Del 1 al 5, qué tan conforme estás con el tiempo de espera para recibir tu diseño finalizado
-            </p>
-            <div class="star-rating">
-              <input type="radio" id="star5" name="rating" value="5" />
+             ¿Qué tan satisfecho estás con la atención recibida?
+             </p>   <div class="star-rating">
+              <input type="radio" id="star5" name="estrellasAtencion" value="5" />
               <label for="star5"></label>
-              <input type="radio" id="star4" name="rating" value="4" />
+              <input type="radio" id="star4" name="estrellasAtencion" value="4" />
               <label for="star4"></label>
-              <input type="radio" id="star3" name="rating" value="3" />
+              <input type="radio" id="star3" name="estrellasAtencion" value="3" />
               <label for="star3"></label>
-              <input type="radio" id="star2" name="rating" value="2" />
+              <input type="radio" id="star2" name="estrellasAtencion" value="2" />
               <label for="star2"></label>
-              <input type="radio" id="star1" name="rating" value="1" />
+              <input type="radio" id="star1" name="estrellasAtencion" value="1" />
               <label for="star1"></label>
             </div>
-            
+                        <!-- Pregunta + Rating -->
+      
+
+                        <!-- Pregunta + Rating -->
+            <p  class="intro text-center text-white mb-4">
+              ¿Qué tan conforme estás con el tiempo de espera para recibir tu diseño finalizado
+            </p>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="estrellasTiempo" value="5" />
+              <label for="star5"></label>
+              <input type="radio" id="star4" name="estrellasTiempo" value="4" />
+              <label for="star4"></label>
+              <input type="radio" id="star3" name="estrellasTiempo" value="3" />
+              <label for="star3"></label>
+              <input type="radio" id="star2" name="estrellasTiempo" value="2" />
+              <label for="star2"></label>
+              <input type="radio" id="star1" name="estrellasTiempo" value="1" />
+              <label for="star1"></label>
+            </div>
+
+
+                  <p  class="intro text-center text-white mb-4">
+           ¿Qué tanto te agrado el resultado de diseño recibido? 
+            </p>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="estrellasConfotmidad" value="5" />
+              <label for="star5"></label>
+              <input type="radio" id="star4" name="estrellasConfotmidad" value="4" />
+              <label for="star4"></label>
+              <input type="radio" id="star3" name="estrellasConfotmidad" value="3" />
+              <label for="star3"></label>
+              <input type="radio" id="star2" name="estrellasConfotmidad" value="2" />
+              <label for="star2"></label>
+              <input type="radio" id="star1" name="estrellasConfotmidad" value="1" />
+              <label for="star1"></label>
+            </div>
 
             <!-- Sugerencias -->
             <div class="mb-4">
-              <textarea name="sugerencias" rows="3"
+              <textarea name="comentarios" rows="3"
                         class="form-control form-control-lg bg-white bg-opacity-25 border-0 rounded-pill text-white"
                         placeholder="Si la empresa fuera tuya, ¿qué cambiarías para mejorar aún más nuestros servicios?"></textarea>
             </div>

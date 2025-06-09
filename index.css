@@ -210,7 +210,7 @@ body.dark-theme .nav-toggle .hamburger-icon::after {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3rem 1rem; 
+  padding: 0rem 0rem; 
 }
 
 .nosotros p { /* For the intro paragraph */
@@ -1003,7 +1003,7 @@ body.dark-theme #theme-toggle {
   }
 }
 .trusted-by {
-  padding: 4rem 1rem;
+  padding: 0 1rem 8rem;
   background-color: transparent;
   text-align: center;
 }
@@ -1012,13 +1012,19 @@ body.dark-theme #theme-toggle {
   overflow: hidden;
   position: relative;
   width: 100%;
-}
 
+  margin-top: 0.5rem;
+}
 .slide-track {
   display: flex;
   width: calc(250px * 16); /* ajustado a la cantidad de logos */
   animation: scroll 40s linear infinite;
 }
+
+main.content {
+  padding-bottom: 6rem; /* espacio para evitar que el contenido toque el footer */
+}
+
 
 .slide {
   width: 250px;
@@ -1027,6 +1033,9 @@ body.dark-theme #theme-toggle {
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+}
+.carousel-container:last-of-type {
+  margin-bottom: 4rem; /* o más si fuera necesario */
 }
 
 .slide img {
